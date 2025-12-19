@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Midterm-7-24</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>7vmyqk25ggjq</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="player" sid="850119108104724">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="941773502155404">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="658213976352042" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\RM522\Downloads\baboon.png">
+                        <collision-poly>
+                            <point x="0.148148" y="0.100629" />
+                            <point x="0.5" y="0" />
+                            <point x="0.851852" y="0.100629" />
+                            <point x="0.87037" y="0.496855" />
+                            <point x="0.768519" y="0.842767" />
+                            <point x="0.5" y="0.90566" />
+                            <point x="0.222222" y="0.849057" />
+                            <point x="0.12037" y="0.496855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coinbox" sid="166783047773873">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="coins" sid="768924242812939" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="306744695704574">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="460347440892749" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\RM522\Downloads\crate.png">
+                        <collision-poly>
+                            <point x="0.0352113" y="0.0352113" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971831" y="0.028169" />
+                            <point x="1" y="0.5" />
+                            <point x="0.957747" y="0.957747" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0422535" y="0.957747" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="542178538316709">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="new_y" sid="463059736164361" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934069807717894" speed="5">
+                    <frame duration="1" hotspotX="0.508" hotspotY="0.506849" original-source="C:\Users\RM522\Downloads\fruit_banana.png">
+                        <collision-poly>
+                            <point x="0.168831" y="0.178082" />
+                            <point x="0.493506" y="0.0273973" />
+                            <point x="0.831169" y="0.178082" />
+                            <point x="0.948052" y="0.493151" />
+                            <point x="0.831169" y="0.821918" />
+                            <point x="0.493506" y="0.972603" />
+                            <point x="0.155844" y="0.835616" />
+                            <point x="0.038961" y="0.493151" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="506005699963600">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="346359134568024">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\RM522\Downloads\stone-1024.jpg.preview.jpg" />
+        </object-type>
+        <object-type name="ground" sid="775304199398875">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="260388877869287">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="422907911326723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\RM522\Downloads\stone-1024.jpg.preview.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="378348930363536">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839139283067693" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="615712022378358">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="319012534004668" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\RM522\Downloads\1574044690473.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg" sid="296904071428825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777741606237381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="C:\Users\RM522\Downloads\background.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
